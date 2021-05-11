@@ -1,0 +1,1 @@
+{"ast":null,"code":"export function callApi() {\n  return Promise.resolve(123);\n}","map":null,"metadata":{},"sourceType":"module"}

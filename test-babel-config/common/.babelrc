@@ -1,0 +1,13 @@
+// babel.config.js vs .babelrc
+{
+  "presets": ["@babel/preset-react"],
+  "plugins": [
+    [
+      "@babel/plugin-transform-template-literals",
+      {
+        // loose 옵션을 주면 문자열을 연결할 때 concat 대신 + 연산자를 사용한다.
+        "loose": true
+      }
+    ]
+  ]
+}

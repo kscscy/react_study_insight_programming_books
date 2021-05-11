@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>test-ssr</title>
+  __STYLE_FROM_SERVER__
+  <script type="text/javascript">
+    // 서버는 __DATA_FROM_SERVER__ 부분에 필요한 데이터를 채워서 전달한다.
+    // __DATA_FROM_SERVER__ 는 not defined 계속 뜨는 이유가 뭘까? 다른 변수명으로 대체하면 사용할 수 있었는데?
+    // 클라이언트는 window.__INITIAL_DATA__ 를 통해서 서버의 데이터를 받을 수 있다.
+    // window.HELLO = HELLO_WORLD;
+    // console.log('test', window.HELLO);
+    
+    window.__INITIAL_DATA__ = TEST_DATA;
+    console.log('init', window.__INITIAL_DATA__);
+
+  </script>
+</head>
+<body>
+  <div id="root"></div>
+</body>
+</html>

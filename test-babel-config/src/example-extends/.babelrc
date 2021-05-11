@@ -1,0 +1,10 @@
+{
+  // extends 속성을 이용해서 다른 파일에 있는 설정을 가져온다.
+  "extends": "../../common/.babelrc",
+  // 가져온 설정에 플러그인을 추가한다.
+  "plugins": [
+    "@babel/plugin-transform-arrow-functions",
+    // 기존 파일에 있는 설정과 중복이 되면 현재 파일의 옵션으로 결정된다.
+    "@babel/plugin-transform-template-literals"
+  ]
+}
